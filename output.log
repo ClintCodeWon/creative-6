@@ -1,0 +1,15 @@
+nohup: ignoring input
+before / Route
+/ Route
+Session {
+  cookie: 
+   { path: '/',
+     _expires: 2018-01-06T08:39:14.725Z,
+     originalMaxAge: 2628000000,
+     httpOnly: true },
+  msg: 'User Not Found.' }
+/ Route else user
+[0mGET / [36m302 [0m12.063 ms - 56[0m
+/login Route
+[0mGET /login [32m200 [0m6.876 ms - 735[0m
+[0mGET /stylesheets/style.css [36m304 [0m3.686 ms - -[0m
