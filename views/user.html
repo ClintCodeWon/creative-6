@@ -6,32 +6,54 @@
     <link rel="stylesheet" type="text/css" href="/stylesheets/style.css" />
 </head>
         
-<body>  
+<body>
+    <div id = "user.html">
+   <img src="http://performermag.com/wp-content/uploads/2015/06/apple-music-itunes.png" height = "100" width = "100">
+	<br>
+	 <div id = "input">  
     <div class="form-container" ng-controller="myController">
-        <p id="sectionTitle" class="form-header">User Profile</p>
+	<br> 
+	<p id="sectionTitle" class="form-header">User Profile</p>
         <form method="POST" action="/user/update">
             <label>Username:</label>
+		<br>
             <input type="text" id="username" name="username" ng-model="user.username" disabled><br>
-            <label>Email:</label>
+        	<br>   
+	 <label>Email:</label>
+	<br>
             <input type="email" id="email" name="email" ng-model="user.email"><br>          
-            <label>Your favorite song:</label>
+        <br>   
+	 <label>Your favorite song:</label>
+	<br>
             <input type="text" id="songOne" name="songOne" ng-model="user.songOne"><br>
-	    <label>Close second:</label>
-	    <input type="text" id="songTwo" name="songTwo" ng-model="user.songTwo"><br>   
-            <label>Honorable third:</label>
-            <input type="text" id="songThree" name="songThree" ng-model="user.songThree"><br> 
-	    <label>A solid 4th:</label>
-            <input type="text" id="songFour" name="songFour" ng-model="user.songFour"><br>
-	    <label>Mentionable 5th:</label>
-            <input type="text" id="songFive" name="songFive" ng-model="user.songFive"><br> 
+	<br>   
+	 <label>Close second:</label>
+	<br>   
+	 <input type="text" id="songTwo" name="songTwo" ng-model="user.songTwo"><br>   
+        <br>    
+	<label>Honorable third:</label>
+        <br>    
+	<input type="text" id="songThree" name="songThree" ng-model="user.songThree"><br> 
+	<br>    
+	<label>A solid 4th:</label>
+        <br>    
+	<input type="text" id="songFour" name="songFour" ng-model="user.songFour"><br>
+	<br>    
+	<label>Mentionable 5th:</label>
+        <br>    
+	<input type="text" id="songFive" name="songFive" ng-model="user.songFive"><br> 
  
-
+<br>
 	    <input type="submit" id="save" value="Save">
         </form>
     </div>
+	<br>
     <form method="POST" action="/user/delete">
         <input type="submit" id="delete" value="Delete User">
     </form>
+	<br>
+    </div>
+	<br>
     <hr>
     <span id="userMsg">
     <%= msg %>
@@ -39,6 +61,7 @@
     <script src="http://code.angularjs.org/1.2.9/angular.min.js"></script>
     <script src="/javascripts/my_app.js"></script>
     <a id="homeLink" href="/">Home</a>
+    </div>
 </body>
 
 </html>

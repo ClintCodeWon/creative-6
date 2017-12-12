@@ -1,8 +1,28 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  text-align: center;
+  color: lightgrey;
+  background-image: url("https://www.walldevil.com/wallpapers/a60/concert-silhouette-hand-light.jpg");
 }
 
 a {
   color: #00B7FF;
+}
+
+
+#input
+{
+	color: black;
+	 margin: auto;
+	 background: rgba(231, 247, 250, 0.6);
+	 width: 38%;
+}
+
+#favList
+{
+	color: black;
+	 margin: auto;
+	 background: rgba(231, 247, 250, 0.6);
+	 width: 38%;
 }

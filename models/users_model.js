@@ -7,7 +7,7 @@ var UserSchema = new Schema({
     songTwo: String,
     songThree: String,
     songFour: String,
-    SongFive: String,
+    songFive: String,
     hashed_password: String
 });
 mongoose.model('User', UserSchema);

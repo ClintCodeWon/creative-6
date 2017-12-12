@@ -7,9 +7,10 @@
 </head>
         
 <body>  
-    <div ng-controller="myController">
-        <h2 id="welcomeText">Welcome. You are Logged In as
-            <%= username %>
+    <div id = "index.html">
+    	<img src="http://performermag.com/wp-content/uploads/2015/06/apple-music-itunes.png" height = "100" width = "100">
+	<div ng-controller="myController">
+        <h2 id="welcomeText">Welcome <%= username %> to your music list!
         </h2>
         <a id="logoutLink" href="/logout">logout</a>
         <a id="editLink" href="/user">Edit User</a>
@@ -19,20 +20,39 @@
         <%= msg %>
     </span>
     <hr>
+    <div id = "favList">
     <span id="colorText">
-    1st:
+	<br>
+   <strong> Your favorite Song: </strong>
+	<br>
         <%= songOne %>
-    2nd:
+	<br>
+	<br>
+   <strong> Close Second: </strong>
+	<br>
         <%= songTwo %>
-    3rd:
+	<br>
+	<br>
+   <strong> Honorable third: </strong>
+	<br>
         <%= songThree %>
-    4th:
+	<br>
+	<br>
+   <strong> A solid fourth: </strong>
+	<br>
         <%= songFour %>
-    5th:
+	<br>
+	<br>
+   <strong> Mentionable fifth: </strong>
+	<br>
         <%= songFive %>
+	<br>
       </span>
+	<br>
+      </div>
     <script src="http://code.angularjs.org/1.2.9/angular.min.js"></script>
     <script src="/javascripts/my_app.js"></script>
+    </div>
 </body>
       
 </html>
