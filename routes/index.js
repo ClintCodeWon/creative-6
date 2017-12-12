@@ -12,7 +12,11 @@ router.get('/', function(req, res){
       console.log("/ Route if user");
       res.render('index', {username: req.session.username,
                            msg:req.session.msg,
-                           color:req.session.color});
+                           songOne:req.session.songOne,
+			   songTwo:req.session.songTwo,
+			   songThree:req.session.songThree,
+			   songFour:req.session.songFour,
+			   songFive:req.session.songFive});
     } else {
       console.log("/ Route else user");
       req.session.msg = 'Access denied!';

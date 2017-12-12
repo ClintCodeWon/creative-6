@@ -14,9 +14,19 @@
             <input type="text" id="username" name="username" ng-model="user.username" disabled><br>
             <label>Email:</label>
             <input type="email" id="email" name="email" ng-model="user.email"><br>          
-            <label>Favorite Color:</label>
-            <input type="text" id="color" name="color" ng-model="user.color"><br>   
-            <input type="submit" id="save" value="Save">
+            <label>Your favorite song:</label>
+            <input type="text" id="songOne" name="songOne" ng-model="user.songOne"><br>
+	    <label>Close second:</label>
+	    <input type="text" id="songTwo" name="songTwo" ng-model="user.songTwo"><br>   
+            <label>Honorable third:</label>
+            <input type="text" id="songThree" name="songThree" ng-model="user.songThree"><br> 
+	    <label>A solid 4th:</label>
+            <input type="text" id="songFour" name="songFour" ng-model="user.songFour"><br>
+	    <label>Mentionable 5th:</label>
+            <input type="text" id="songFive" name="songFive" ng-model="user.songFive"><br> 
+ 
+
+	    <input type="submit" id="save" value="Save">
         </form>
     </div>
     <form method="POST" action="/user/delete">

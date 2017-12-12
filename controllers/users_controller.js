@@ -40,7 +40,11 @@ exports.login = function(req, res){
         req.session.user = user.id;
         req.session.username = user.username;
         req.session.msg = 'Authenticated as ' + user.username;
-        req.session.color = user.color;
+        req.session.songOne = user.songOne;
+	req.session.songTwo = user.songTwo;
+	req.session.songThree = user.songThree;
+	req.session.songFour = user.songFour;
+	req.session.songFive = user.songFive;
         res.redirect('/');
       });
     }else{
@@ -68,13 +72,21 @@ exports.updateUser = function(req, res){
   User.findOne({ _id: req.session.user })
   .exec(function(err, user) {
     user.set('email', req.body.email);
-    user.set('color', req.body.color);
+    user.set('songOne', req.body.songOne);
+    user.set('songTwo', req.body.songTwo);
+    user.set('songThree', req.body.songThree);
+    user.set('songFour', req.body.songFour);
+    user.set('songFive', req.body.songFive);
     user.save(function(err) {
       if (err){
         res.sessor.error = err;
       } else {
         req.session.msg = 'User Updated.';
-        req.session.color = req.body.color;
+        req.session.songOne = req.body.songOne;
+	req.session.songTwo = req.body.songTwo;
+	req.session.songThree = req.body.songThree;
+	req.session.songFour = req.body.songFour;
+	req.session.songFive = req.body.songFive;
       }
       res.redirect('/user');
     });
